@@ -15,7 +15,7 @@ function Nav() {
       >
         <Heading size="3xl">Unimo</Heading>
         <Flex
-          bg="red"
+          // bg="red"
           justify={[
             'end',
             'end',
