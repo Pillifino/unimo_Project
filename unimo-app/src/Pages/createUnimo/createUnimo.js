@@ -1,6 +1,6 @@
 import React from 'react'
 
-function createUnimo() {
+function CreateUnimod() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function createUnimo() {
   )
 }
 
-export default createUnimo
+export default CreateUnimod

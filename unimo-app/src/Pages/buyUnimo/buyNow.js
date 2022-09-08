@@ -1,6 +1,6 @@
 import React from 'react'
 
-function buyNow() {
+function BuyNow() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function buyNow() {
   )
 }
 
-export default buyNow
+export default BuyNow

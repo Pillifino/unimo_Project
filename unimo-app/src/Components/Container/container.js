@@ -1,26 +1,40 @@
-import React from 'react'
-
+import React from 'react';
+// Components
+// Routing
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Pages
-import home from '../../Pages/Home/home'
-import singup from '../../Pages/Signup/singup'
-import login from '../../Pages/Login/login'
-import shop from '../../Pages/myShop/shop'
-import bidding from '../../Pages/Bidding/bidding'
-import buyNow from '../../Pages/buyUnimo/buyNow'
-import buyUnimo from '../../Pages/buyUnimo/buyUnimo'
-import sellUnimo from '../../Pages/sellUnimo/sellUnimo'
-import collections from '../../Pages/myCollections/collections'
-import createUnimo from '../../Pages/createUnimo/createUnimo'
-import settings from '../../Pages/Settings/settings'
+import Home from '../../Pages/Home/home';
+import Signup from '../../Pages/Signup/singup';
+import Login from '../../Pages/Login/login';
+import Shop from '../../Pages/myShop/shop';
+import Bidding from '../../Pages/Bidding/bidding';
+import BuyNow from '../../Pages/buyUnimo/buyNow';
+import BuyUnimo from '../../Pages/buyUnimo/buyUnimo';
+import SellUnimo from '../../Pages/sellUnimo/sellUnimo';
+import Collections from '../../Pages/myCollections/collections';
+import CreateUnimo from '../../Pages/createUnimo/createUnimo';
+import Settings from '../../Pages/Settings/settings';
 
-
-
-function container() {
+function Container() {
   return (
-    <div>
-      
-    </div>
-  )
+    <Router>
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/shop" element={<Shop />}/>
+          <Route path="/bidding" element={<Bidding />}/>
+          <Route path="/buynow" element={<BuyNow />}/>
+          <Route path="/buyunimo" element={<BuyUnimo />}/>
+          <Route path="/sellunimo" element={<SellUnimo />}/>
+          <Route path="/collections" element={<Collections />}/>
+          <Route path="/createunimo" element={<CreateUnimo />}/>
+          <Route path="/settings" element={<Settings />}/>
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default container
+export default Container;

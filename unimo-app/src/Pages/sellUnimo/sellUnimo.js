@@ -1,6 +1,6 @@
 import React from 'react'
 
-function sellUnimo() {
+function SellUnimo() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function sellUnimo() {
   )
 }
 
-export default sellUnimo
+export default SellUnimo
