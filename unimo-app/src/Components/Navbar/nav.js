@@ -15,19 +15,28 @@ function Nav() {
       >
         <Heading size="3xl">Unimo</Heading>
         <Flex
-          //   bg="red"
-          justify="space-evenly"
+          bg="red"
+          justify={[
+            'end',
+            'end',
+            'space-between',
+            'space-between',
+          ]}
           alignItems="center"
           h="100%"
-          w="30%"
+          w={["60%","40%","35%","35%",]}
+          pr="5"
         >
-          <Text mb="5" color="black">
+          <Text mb="5" color="black" minWidth="55px"
+          display={["none","none","flex","flex",]}
+          >
             Create Unimo +
           </Text>
           <Image
+          minWidth="50px"
             borderRadius="full"
             objectFit="cover"
-            boxSize="70px"
+            boxSize={["50px","70px","70px","70px",]}
             src={Profile}
             alt="profile"
           />
