@@ -1,6 +1,6 @@
 import React from 'react'
 
-function collections() {
+function Collections() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function collections() {
   )
 }
 
-export default collections
+export default Collections

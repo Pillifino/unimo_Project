@@ -5,11 +5,12 @@ import {
 } from '@chakra-ui/react';
 
 // import { ColorModeSwitcher } from './ColorModeSwitcher';
+import Container from './Components/Container/container';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-
+      <Container/>
     </ChakraProvider>
   );
 }

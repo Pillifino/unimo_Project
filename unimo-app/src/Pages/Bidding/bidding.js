@@ -1,6 +1,6 @@
 import React from 'react'
 
-function bidding() {
+function Bidding() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function bidding() {
   )
 }
 
-export default bidding
+export default Bidding
