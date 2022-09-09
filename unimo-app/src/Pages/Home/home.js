@@ -18,7 +18,7 @@ function Home() {
       <Flex 
       justify="center" 
       bg="bg"
-      h="300vh"
+      h={["1050vh","1050vh","300vh","300vh",]}
       >
         <Flex 
         bg="bg" 
@@ -28,7 +28,7 @@ function Home() {
           <Flex
             // bg="green"
             w="100%"
-            h={["5%","5%","10%","10%",]}
+            h={["1%","1%","10%","10%",]}
             align="center"
             justify="space-between"
           >
@@ -48,7 +48,7 @@ function Home() {
             // bg="orange"
             mb="20"
             w="100%"
-            h="80%"
+            h={["100%","100%","100%","100%",]}
             justify="space-evenly"
             align="center"
             alignItems="center"
@@ -57,10 +57,10 @@ function Home() {
             {images.map((item, index) => {
               return (
                 <Flex
-                  w="15vw"
-                  h="30vh"
-                  minWidth="130px"
-                  maxWidth="150px"
+                  w={["80vw","60vw","20vw","20vw",]}
+                  h={["60vh","60vh","30vh","30vh",]}
+                  minWidth={["350px","350px","175px","175px",]}
+                  maxWidth={["100%","100%","22%","200px",]}
                   justify="center"
                   alignItems="center"
                   boxShadow="xl"
@@ -72,15 +72,21 @@ function Home() {
                     w="90%"
                     h="85%"
                     mt="1.5"
-                    minWidth="115px"
-                    maxWidth="150px"
+                    minWidth={["190px","190px","160px","160px",]}
+                    // maxWidth="160px"
                     borderRadius="2px"
                     key={index}
                     src={require(`../../Assets/Images/` + item.image + `.jpg`)}
                     alt={item.title}
                     boxShadow="lg"
                   />
-                  <Text m="1" align="center" fontSize=".8em">Unimo Name</Text>
+                  <Text 
+                  pt={["4","4","2","2",]} 
+                  align="center" 
+                  fontSize={["1.5em","1.7em",".8em",".8em",]}
+                  >
+                    Unimo Name
+                    </Text>
                 </Flex>
               );
             })}
