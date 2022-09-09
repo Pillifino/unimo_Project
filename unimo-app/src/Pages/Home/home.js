@@ -28,7 +28,7 @@ function Home() {
           <Flex
             // bg="green"
             w="100%"
-            h={["1%","1%","10%","10%",]}
+            h={["1%","1%","5%","5%",]}
             align="center"
             justify="space-between"
           >
@@ -59,7 +59,7 @@ function Home() {
                 <Flex
                   w={["80vw","60vw","20vw","20vw",]}
                   h={["60vh","60vh","30vh","30vh",]}
-                  minWidth={["350px","350px","175px","175px",]}
+                  minWidth={["430px","430px","200px","200px",]}
                   maxWidth={["100%","100%","22%","200px",]}
                   justify="center"
                   alignItems="center"
